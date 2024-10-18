@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: rgb(65, 225, 217);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #incident-form, #incident-list {
+    padding: 1rem;
+  }
+  
+  form label, form select, form textarea, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkblue;
+  }
+  
+  #incidents {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #incidents li {
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+  }
+  
