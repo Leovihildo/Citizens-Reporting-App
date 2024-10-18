@@ -1,6 +1,6 @@
 // Function to submit an incident
 function submitIncident(type, description, image) {
-    const url = 'http://ontym.infinityfreeapp.com/api/submit-incident.php'; // Adjust to your submit URL
+    const url = 'https://ontym.infinityfreeapp.com/api/submit-incident.php'; // Adjust to your submit URL
     const newIncident = {
         title: type,
         content: description,
