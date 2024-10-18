@@ -33,13 +33,15 @@ function submitIncident(type, description, image) {
 function fetchIncidents() {
     const url = 'https://ontym.infinityfreeapp.com/wp-json/wp/v2/posts'; // Your API endpoint to get posts
 
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
+    fetch(url, {
+    method: 'GET',
+    mode: 'no-cors' // This tells the browser to make a "no-cors" request
+})
+       .then(response => {
+    // Since "no-cors" doesn't allow you to access the response data, 
+    // you won't be able to handle the actual response here
+    console.log('Request sent successfully');
+})
         .then(data => {
             console.log('Incidents:', data); // Handle the retrieved posts
             const incidentsList = document.getElementById('incidents');
