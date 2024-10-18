@@ -3,27 +3,58 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
+  }
+  .text-center{
+    text-align: center;
   }
   
   header {
-    background-color: rgb(65, 225, 217);
+    background-color: #41e1d9;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
     margin: 0;
+    font-size: 2rem;
   }
   
-  #incident-form, #incident-list {
-    padding: 1rem;
+  #incidentForm, #incident-list {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 1.5rem auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  form label, form select, form textarea, form input {
-    display: block;
-    width: 100%;
+  #incident-form h2, #incident-list h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  form label {
+    font-size: 1rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form select, form textarea, form input[type="file"], form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  form textarea {
+    height: 120px;
+    resize: none;
   }
   
   button {
@@ -32,6 +63,9 @@ body {
     border: none;
     padding: 0.75rem;
     cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
   
   button:hover {
@@ -41,19 +75,27 @@ body {
   #incidents {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   #incidents li {
     background-color: white;
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #incidents li strong {
+    font-size: 1.2rem;
   }
   
   footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #eee;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
   }
   
