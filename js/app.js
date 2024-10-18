@@ -31,7 +31,7 @@ function submitIncident(type, description, image) {
 
 // Function to fetch incidents
 function fetchIncidents() {
-    const url = 'http://ontym.infinityfreeapp.com/wp-json/wp/v2/posts'; // Your API endpoint to get posts
+    const url = 'https://ontym.infinityfreeapp.com/wp-json/wp/v2/posts'; // Your API endpoint to get posts
 
     fetch(url)
         .then(response => {
