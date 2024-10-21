@@ -1,6 +1,6 @@
 const app = {
     submitIncident: function(title, description, image) {
-        const url = 'https://ontym.infinityfreeapp.com/submit-incident.php'; // API URL
+        const url = './submit-incident.php'; // API URL
         const formData = new FormData();
         formData.append('title', title);         // Sending title
         formData.append('description', description); // Sending description
